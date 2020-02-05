@@ -1,0 +1,148 @@
+EESchema Schematic File Version 4
+LIBS:Encoder_check-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_UART:SP3481CN U4
+U 1 1 5E328515
+P 5850 4100
+F 0 "U4" H 6100 4450 50  0000 C CNN
+F 1 "SP3481CN" H 5600 4450 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6900 3750 50  0001 C CIN
+F 3 "http://www.icbase.com/pdf/SPX/SPX00480106.pdf" H 5850 4100 50  0001 C CNN
+	1    5850 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 5E3296C0
+P 5850 4550
+F 0 "#PWR0140" H 5850 4300 50  0001 C CNN
+F 1 "GND" H 5855 4377 50  0000 C CNN
+F 2 "" H 5850 4550 50  0001 C CNN
+F 3 "" H 5850 4550 50  0001 C CNN
+	1    5850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0141
+U 1 1 5E329D92
+P 5850 3150
+F 0 "#PWR0141" H 5850 3000 50  0001 C CNN
+F 1 "+5V" H 5865 3323 50  0000 C CNN
+F 2 "" H 5850 3150 50  0001 C CNN
+F 3 "" H 5850 3150 50  0001 C CNN
+	1    5850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3150 5850 3200
+Wire Wire Line
+	5850 4500 5850 4550
+$Comp
+L Device:R R16
+U 1 1 5E32A31D
+P 5050 3700
+F 0 "R16" H 5120 3746 50  0000 L CNN
+F 1 "R" H 5120 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 3700 50  0001 C CNN
+F 3 "~" H 5050 3700 50  0001 C CNN
+	1    5050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3450 5050 3550
+$Comp
+L Device:C C13
+U 1 1 5E32C5C9
+P 6450 3400
+F 0 "C13" H 6565 3446 50  0000 L CNN
+F 1 "0.1u" H 6565 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6488 3250 50  0001 C CNN
+F 3 "~" H 6450 3400 50  0001 C CNN
+	1    6450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5E32CCF9
+P 6450 3600
+F 0 "#PWR0142" H 6450 3350 50  0001 C CNN
+F 1 "GND" H 6455 3427 50  0000 C CNN
+F 2 "" H 6450 3600 50  0001 C CNN
+F 3 "" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3600 6450 3550
+Wire Wire Line
+	6450 3250 6450 3200
+Wire Wire Line
+	6450 3200 5850 3200
+Connection ~ 5850 3200
+Wire Wire Line
+	5850 3200 5850 3700
+Wire Wire Line
+	6250 4000 6300 4000
+Wire Wire Line
+	6300 4000 6300 4100
+Wire Wire Line
+	6300 4200 6250 4200
+Wire Wire Line
+	6250 3900 6750 3900
+Wire Wire Line
+	6300 4100 6750 4100
+Connection ~ 6300 4100
+Wire Wire Line
+	6300 4100 6300 4200
+Wire Wire Line
+	6250 4300 6750 4300
+Text HLabel 6750 3900 2    50   Output ~ 0
+RO
+Text HLabel 6750 4100 2    50   Input ~ 0
+DE
+Text HLabel 6750 4300 2    50   Input ~ 0
+DI
+Text HLabel 4250 4000 0    50   BiDi ~ 0
+RS485_+
+Text HLabel 4250 4200 0    50   BiDi ~ 0
+RS485_-
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5E32B388
+P 4950 3250
+F 0 "J5" V 4914 3062 50  0000 R CNN
+F 1 "Conn_01x02" V 4823 3062 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4950 3250 50  0001 C CNN
+F 3 "~" H 4950 3250 50  0001 C CNN
+	1    4950 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 4000 5050 4000
+Wire Wire Line
+	4250 4200 4950 4200
+Wire Wire Line
+	5050 3850 5050 4000
+Connection ~ 5050 4000
+Wire Wire Line
+	5050 4000 5450 4000
+Wire Wire Line
+	4950 3450 4950 4200
+Connection ~ 4950 4200
+Wire Wire Line
+	4950 4200 5450 4200
+$EndSCHEMATC
