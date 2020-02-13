@@ -1192,8 +1192,6 @@ F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&prodName=TLP7
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 5500 6900 5500
-Wire Wire Line
 	6900 5500 6900 5450
 Wire Wire Line
 	6900 5450 7050 5450
@@ -1201,8 +1199,6 @@ Wire Wire Line
 	7450 5650 6900 5650
 Wire Wire Line
 	6900 5650 6900 5600
-Wire Wire Line
-	6900 5600 6800 5600
 $Comp
 L Connector_Generic:Conn_01x10 J1
 U 1 1 5E852E79
@@ -1308,19 +1304,6 @@ Wire Wire Line
 Connection ~ 8300 5450
 Wire Wire Line
 	8300 5450 8850 5450
-$Comp
-L Connector:Screw_Terminal_01x04 J9
-U 1 1 5EA47402
-P 6600 5500
-F 0 "J9" H 6518 5817 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 6518 5726 50  0000 C CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 6600 5500 50  0001 C CNN
-F 3 "~" H 6600 5500 50  0001 C CNN
-	1    6600 5500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 5400 6950 5400
 Wire Wire Line
 	6950 5400 6950 5050
 Wire Wire Line
@@ -1348,5 +1331,22 @@ F 2 "" H 6950 5050 50  0001 C CNN
 F 3 "" H 6950 5050 50  0001 C CNN
 	1    6950 5050
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5400 6950 5400
+Wire Wire Line
+	6800 5500 6900 5500
+Wire Wire Line
+	6900 5600 6800 5600
+$Comp
+L Connector:Screw_Terminal_01x04 J9
+U 1 1 5EA47402
+P 6600 5600
+F 0 "J9" H 6518 5175 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 6518 5266 50  0000 C CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 6600 5600 50  0001 C CNN
+F 3 "~" H 6600 5600 50  0001 C CNN
+	1    6600 5600
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
