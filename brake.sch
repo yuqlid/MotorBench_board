@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Encoder_check-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mylib:INA180A U6
+L Encoder_check-rescue:INA180A-mylib U6
 U 1 1 5E529C75
 P 5250 4300
+AR Path="/5E529C75" Ref="U6"  Part="1" 
+AR Path="/5E527F61/5E529C75" Ref="U6"  Part="1" 
 F 0 "U6" H 5594 4346 50  0000 L CNN
 F 1 "INA180A" H 5450 4250 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5300 4350 50  0001 C CNN

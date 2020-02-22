@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Encoder_check-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -30,21 +29,6 @@ $EndComp
 Wire Wire Line
 	6950 4450 6950 4550
 $Comp
-L power:+5V #PWR?
-U 1 1 5E33B3C0
-P 6950 3150
-AR Path="/5E33B3C0" Ref="#PWR?"  Part="1" 
-AR Path="/5E331390/5E33B3C0" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 6950 3000 50  0001 C CNN
-F 1 "+5V" H 6965 3323 50  0000 C CNN
-F 2 "" H 6950 3150 50  0001 C CNN
-F 3 "" H 6950 3150 50  0001 C CNN
-	1    6950 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 3150 6950 3250
-$Comp
 L Device:C C?
 U 1 1 5E33B3E4
 P 7550 3200
@@ -55,19 +39,6 @@ F 1 "0.1u" H 7665 3155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7588 3050 50  0001 C CNN
 F 3 "~" H 7550 3200 50  0001 C CNN
 	1    7550 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E33B3EA
-P 7550 3050
-AR Path="/5E33B3EA" Ref="#PWR?"  Part="1" 
-AR Path="/5E331390/5E33B3EA" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 7550 2900 50  0001 C CNN
-F 1 "+5V" H 7565 3223 50  0000 C CNN
-F 2 "" H 7550 3050 50  0001 C CNN
-F 3 "" H 7550 3050 50  0001 C CNN
-	1    7550 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -274,19 +245,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 4050 7700 4050
 $Comp
-L power:+5V #PWR?
-U 1 1 5E366355
-P 8600 2950
-AR Path="/5E366355" Ref="#PWR?"  Part="1" 
-AR Path="/5E331390/5E366355" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H 8600 2800 50  0001 C CNN
-F 1 "+5V" H 8615 3123 50  0000 C CNN
-F 2 "" H 8600 2950 50  0001 C CNN
-F 3 "" H 8600 2950 50  0001 C CNN
-	1    8600 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R17
 U 1 1 5E366E08
 P 8600 3150
@@ -377,5 +335,46 @@ F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 3575 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8700 3650 50  0001 L CNN
 	1    8700 3650
 	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3150 6950 3250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E587AA3
+P 6950 3150
+AR Path="/5E587AA3" Ref="#PWR?"  Part="1" 
+AR Path="/5E331390/5E587AA3" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 6950 3000 50  0001 C CNN
+F 1 "+3V3" H 6965 3323 50  0000 C CNN
+F 2 "" H 6950 3150 50  0001 C CNN
+F 3 "" H 6950 3150 50  0001 C CNN
+	1    6950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E588C27
+P 7550 3050
+AR Path="/5E588C27" Ref="#PWR?"  Part="1" 
+AR Path="/5E331390/5E588C27" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 7550 2900 50  0001 C CNN
+F 1 "+3V3" H 7565 3223 50  0000 C CNN
+F 2 "" H 7550 3050 50  0001 C CNN
+F 3 "" H 7550 3050 50  0001 C CNN
+	1    7550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E590224
+P 8600 2950
+AR Path="/5E590224" Ref="#PWR?"  Part="1" 
+AR Path="/5E331390/5E590224" Ref="#PWR0143"  Part="1" 
+F 0 "#PWR0143" H 8600 2800 50  0001 C CNN
+F 1 "+3V3" H 8615 3123 50  0000 C CNN
+F 2 "" H 8600 2950 50  0001 C CNN
+F 3 "" H 8600 2950 50  0001 C CNN
+	1    8600 2950
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
