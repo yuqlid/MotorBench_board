@@ -332,13 +332,7 @@ F 3 "" H 4150 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 3850 4000 3850
-Wire Wire Line
-	4000 3850 4000 3750
-Wire Wire Line
 	4150 3750 4150 3800
-Wire Wire Line
-	3300 3950 3100 3950
 Wire Wire Line
 	6250 1650 6700 1650
 Wire Wire Line
@@ -477,8 +471,6 @@ Text Label 5700 3000 2    60   ~ 0
 3(**)
 Wire Wire Line
 	4000 3750 4150 3750
-Wire Wire Line
-	3100 3950 3100 3600
 $Comp
 L power:+5V #PWR0102
 U 1 1 5E35CD15
@@ -1210,19 +1202,8 @@ F 3 "~" H 3600 2700 50  0001 C CNN
 	1    3600 2700
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
-U 1 1 5E597057
-P 3500 4050
-F 0 "J1" H 3550 4467 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 3550 4376 50  0000 C CNN
-F 2 "Connector_Multicomp:Multicomp_MC9A12-1034_2x05_P2.54mm_Vertical" H 3500 4050 50  0001 C CNN
-F 3 "~" H 3500 4050 50  0001 C CNN
-	1    3500 4050
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3300 3850
-NoConn ~ 3800 3950
+NoConn ~ 3300 3950
+NoConn ~ 3800 3850
 Wire Wire Line
 	3800 4150 4700 4150
 Wire Wire Line
@@ -1242,8 +1223,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 4450 3200 4450
 Wire Wire Line
-	3200 4450 3200 4050
-Wire Wire Line
 	3200 4050 3300 4050
 Wire Wire Line
 	4400 3850 4700 3850
@@ -1256,8 +1235,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 4550 3100 4150
 Wire Wire Line
-	3100 4150 3300 4150
-Wire Wire Line
 	4700 4250 4600 4250
 Wire Wire Line
 	4600 4250 4600 4650
@@ -1265,8 +1242,6 @@ Wire Wire Line
 	4600 4650 3000 4650
 Wire Wire Line
 	3000 4650 3000 4250
-Wire Wire Line
-	3000 4250 3300 4250
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 5E6F6788
@@ -1322,4 +1297,29 @@ F 3 "~" H 8450 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 5450 9300 5450
+Wire Wire Line
+	3100 4150 3300 4150
+Wire Wire Line
+	3000 4250 3300 4250
+Wire Wire Line
+	3200 4450 3200 4050
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5E597057
+P 3600 4050
+F 0 "J1" H 3650 4467 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 3650 4376 50  0000 C CNN
+F 2 "Connector_Multicomp:Multicomp_MC9A12-1034_2x05_P2.54mm_Vertical" H 3600 4050 50  0001 C CNN
+F 3 "~" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3950 4000 3950
+Wire Wire Line
+	4000 3750 4000 3950
+Wire Wire Line
+	3300 3850 3100 3850
+Wire Wire Line
+	3100 3850 3100 3600
 $EndSCHEMATC
