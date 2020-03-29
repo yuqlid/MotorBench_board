@@ -51,10 +51,6 @@ NoConn ~ 6900 3800
 NoConn ~ 5900 3900
 NoConn ~ 5900 3700
 Wire Wire Line
-	5200 4200 5200 4300
-Wire Wire Line
-	5200 4300 5900 4300
-Wire Wire Line
 	6400 3150 6400 3200
 $Comp
 L Device:C C?
@@ -246,7 +242,6 @@ Text Label 5250 4500 0    50   ~ 0
 A_+
 Text Label 5250 4700 0    50   ~ 0
 A_-
-NoConn ~ 5900 4100
 Text Label 5250 3400 0    50   ~ 0
 I_+
 $Comp
@@ -335,17 +330,6 @@ F 1 "+3V3" H 7165 3023 50  0000 C CNN
 F 2 "" H 7150 2850 50  0001 C CNN
 F 3 "" H 7150 2850 50  0001 C CNN
 	1    7150 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0143
-U 1 1 5E660EAB
-P 5200 4200
-F 0 "#PWR0143" H 5200 4050 50  0001 C CNN
-F 1 "+3V3" H 5215 4373 50  0000 C CNN
-F 2 "" H 5200 4200 50  0001 C CNN
-F 3 "" H 5200 4200 50  0001 C CNN
-	1    5200 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -537,4 +521,28 @@ F 3 "~" H 2750 4650 50  0001 C CNN
 	1    2750 4650
 	0    -1   1    0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8287B2
+P 5650 4200
+AR Path="/5E8287B2" Ref="#PWR?"  Part="1" 
+AR Path="/5E34E778/5E8287B2" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 5650 3950 50  0001 C CNN
+F 1 "GND" H 5655 4027 50  0000 C CNN
+F 2 "" H 5650 4200 50  0001 C CNN
+F 3 "" H 5650 4200 50  0001 C CNN
+	1    5650 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4100 5800 4100
+Wire Wire Line
+	5800 4100 5800 4200
+Wire Wire Line
+	5800 4300 5900 4300
+Wire Wire Line
+	5650 4200 5800 4200
+Connection ~ 5800 4200
+Wire Wire Line
+	5800 4200 5800 4300
 $EndSCHEMATC
