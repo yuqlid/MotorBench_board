@@ -1,4 +1,4 @@
-16595457123417035
+16597042864873185
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6249,6 +6249,13 @@ XT30-PW-W
 
 0
 4
+2
+Connector_Amass
+XT30PB
+
+
+0
+2
 2
 Connector_Audio
 Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal
