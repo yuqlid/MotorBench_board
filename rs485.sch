@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_UART:SP3481CN U4
-U 1 1 5E328515
-P 5850 4100
-F 0 "U4" H 6100 4450 50  0000 C CNN
-F 1 "SP3481CN" H 5600 4450 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6900 3750 50  0001 C CIN
-F 3 "http://www.icbase.com/pdf/SPX/SPX00480106.pdf" H 5850 4100 50  0001 C CNN
-	1    5850 4100
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0140
 U 1 1 5E3296C0
 P 5850 4550
@@ -144,4 +133,15 @@ Wire Wire Line
 Connection ~ 4950 4200
 Wire Wire Line
 	4950 4200 5450 4200
+$Comp
+L mylib:ST485BDR U4
+U 1 1 5E65BC93
+P 5850 4100
+F 0 "U4" H 6100 4450 50  0000 C CNN
+F 1 "ST485BDR" H 5600 4450 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6900 3750 50  0001 C CIN
+F 3 "https://www.st.com/resource/en/datasheet/st485b.pdf" H 5850 4100 50  0001 C CNN
+	1    5850 4100
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

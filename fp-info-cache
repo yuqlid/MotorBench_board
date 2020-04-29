@@ -1,4 +1,4 @@
-16558489742043396
+16597042864873185
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -1504,6 +1504,13 @@ SPST Tactile Switch
 0
 4
 2
+Button_Switch_SMD_my
+ALPS_SKRPAxE010
+http://www.alps.com/prod/info/J/HTML/Tact/SurfaceMount/SKRP/SKRP_list.html
+Push button 
+0
+4
+4
 Button_Switch_THT
 KSA_Tactile_SPST
 KSA http://www.ckswitches.com/media/1457/ksa_ksl.pdf
@@ -6242,6 +6249,13 @@ XT30-PW-W
 
 0
 4
+2
+Connector_Amass
+XT30PB
+
+
+0
+2
 2
 Connector_Audio
 Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal
@@ -19165,6 +19179,13 @@ connector multicomp MC9A MC9A22
 0
 60
 60
+Connector_Omega
+Omega_PCC-SMP_1x2_P13.70mm_Horizontal
+Circuit Board Thermocouple Connectors
+thermocouple omega connector
+0
+4
+3
 Connector_PCBEdge
 4UCON_10156_2x40_P1.27mm_Socket_Horizontal
 4UCON 10156 Card edge socket with 80 contacts (40 each side), through-hole, http://www.4uconnector.com/online/object/4udrawing/10156.pdf
@@ -42860,6 +42881,41 @@ https://power.murata.com/data/power/oki-78sr.pdf
 0
 3
 3
+Converter_DCDC_my
+Converter_DCDC_CUI_PQME1-M_SMD
+DCDC-Converter, CUI, PQME1-M Series, 0.75W Single Output, 1500VDC Isolation, 13.2x8.5x7.0mm https://www.cui.com/product/resource/pqme1-m.pdf
+DCDC SMD CUI PQME1-M
+0
+5
+5
+Converter_DCDC_my
+Converter_DCDC_MINIMAX_M78AR05-1_THT
+DCDC-Converter, MINIMAX, MINIMAX_M78AR05-1, SIP-3, pitch 2.54mm
+dc-dc recom buck sip-3 pitch 2.54mm
+0
+3
+3
+Converter_DCDC_my
+Converter_DCDC_RECOM_R-78C-1.0_THT
+DCDC-Converter, RECOM, RECOM_R-78C-1.0, SIP-3, pitch 2.54mm
+dc-dc recom buck sip-3 pitch 2.54mm
+0
+3
+3
+Converter_DCDC_my
+Converter_DCDC_RECOM_RFM-0505S-0.2_THT
+DCDC-Converter, RECOM, RECOM_R-78S-0.1, SIP-4, pitch 2.54mm, package size 11.6x8.5x10.4mm^3, https://www.recom-power.com/pdf/Innoline/R-78Sxx-0.1.pdf
+dc-dc recom buck sip-4 pitch 2.54mm
+0
+4
+4
+Converter_DCDC_my
+DCDC-Conv_Minimax_MAU10x
+
+
+0
+5
+5
 Crystal
 Crystal_AT310_D3.0mm_L10.0mm_Horizontal
 Crystal THT AT310 10.0mm-10.5mm length 3.0mm diameter http://www.cinetech.com.tw/upload/2011/04/20110401165201.pdf
@@ -44113,14 +44169,14 @@ THT ceramic resonator filter DSS6
 0
 3
 3
-Crystal(my)
+Crystal_my
 NDK_Crystal_SMD_3225_2Pads
 Crystal, Quarz, SMD, 0603, 2 Pads, Obsolete!, NOT for new designs!,
 Crystal Quarz SMD 0603 2 Pads
 0
 2
 2
-Crystal(my)
+Crystal_my
 NDK_Crystal_SMD_3225_2Pads_HandSolding
 Crystal, Quarz, SMD, 0603, 2 Pads, Obsolete!, NOT for new designs!,
 Crystal Quarz SMD 0603 2 Pads
@@ -50042,6 +50098,90 @@ L_Toroid Vertical series Radial pin pitch 31.80mm  length 67.6mm width 36.1mm Vi
 0
 2
 2
+Inductors_SMD
+Choke_SMD_BOURNS-SRN3015
+Choke, SRR,3015, BOURNS, SMD,
+Choke, SRR,3015 BOURNS, SMD,
+0
+2
+2
+Inductors_SMD
+Choke_SMD_BOURNS-SRN4012TA
+Choke, SRR,4028, BOURNS, SMD,
+Choke, SRR,4028, BOURNS, SMD,
+0
+2
+2
+Inductors_SMD
+Choke_SMD_BOURNS-SRN4018
+Choke, SRR,4028, BOURNS, SMD,
+Choke, SRR,4028, BOURNS, SMD,
+0
+2
+2
+Inductors_SMD
+Choke_SMD_BOURNS-SRN4018TA
+Choke, SRR,4028, BOURNS, SMD,
+Choke, SRR,4028, BOURNS, SMD,
+0
+2
+2
+Inductors_SMD
+Choke_SMD_BOURNS-SRN4026
+Choke, SRR,4028, BOURNS, SMD,
+Choke, SRR,4028, BOURNS, SMD,
+0
+2
+2
+Inductors_SMD
+Choke_SMD_BOURNS-SRR4028
+Choke, SRR,4028, BOURNS, SMD,
+Choke, SRR,4028, BOURNS, SMD,
+0
+2
+2
+Inductors_SMD
+Choke_SMD_Panasonic_EXC24CN
+
+Choke, SMD, 0504, Common, Mode
+0
+4
+4
+Inductors_SMD
+Choke_SMD_TDK_MCZ1210AH
+
+Choke, SMD, 0504, Common, Mode
+0
+4
+4
+Inductors_SMD
+L_0603
+Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)
+capacitor 0603
+0
+2
+2
+Inductors_SMD
+L_0805
+Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)
+capacitor 0805
+0
+2
+2
+Inductors_SMD
+L_Murata_DLW21HN900SQ2#
+
+Choke, SMD, 0504, Common, Mode
+0
+4
+4
+Inductors_SMD
+L_Taiyo-Yuden_NR-10050
+Inductor, Taiyo Yuden, NR series, Taiyo-Yuden_NR-80xx, 8.0mmx8.0mm
+inductor taiyo-yuden nr smd
+0
+2
+2
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
@@ -51295,6 +51435,13 @@ Yellow 5381 Series LED
 0
 2
 2
+LEDs
+LED_STANLEY_1211C
+LED 0603 smd package
+LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED
+0
+4
+4
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -52078,6 +52225,20 @@ Mounting Hole 8.4mm, M8
 mounting hole 8.4mm m8
 0
 9
+1
+Mounting_Holes_my
+MountingHole_2.1mm
+Mounting Hole 2.1mm, no annular
+mounting hole 2.1mm no annular
+0
+0
+0
+Mounting_Holes_my
+Wire_3mm_Pad
+Mounting Hole 3mm
+mounting hole 3mm
+0
+1
 1
 NetTie
 NetTie-2_SMD_Pad0.5mm
